@@ -41,4 +41,67 @@
   color: #888;
 }
 
+.profile {
+  text-align: center;
+}
+.profile img{
+  max-width: 300px;
+  display: block;
+    margin: 0 auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#profile {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.face{
+  position: absolute;
+  left: 95px;
+  width: 100px;
+  height: 100px;
+  top: 82px;
+  border-radius: 100%;
+}
+
+.face1{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+#profile h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#profile p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#languages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#languages li {
+  margin: 5px 0;
+}
+#profile h1,
+#profile p,
+#profile li {
+  font-style: italic;
+}
+
 

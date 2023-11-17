@@ -22,14 +22,14 @@ export const Header = () => {
             href="/profile"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            Categories
+            My Profile
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Products
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Liked
-          </a>
+          </a> */}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link

@@ -1,19 +1,46 @@
+// Trong file ProfilePage.tsx
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 
-const ProfilePage = () => {
-    return /*html*/(
-        <div className="profile">
-        <img
-          src="./public/z4089866810746_8630481cc291b4e10e266aa951a4f935.jpg"
-          alt="Profile Picture"
-        />
-      <h1>Nguyễn Thành Thắng</h1>
-      <p>Web Developer</p>
-      <p>23 years old</p>
-      <p>Ha Noi</p>
-      <p>Make MONEY</p>
-      <p>JS,PHP,ECMA</p>
+const ProfilePage: React.FC = () => {
+  const [textColor, setTextColor] = useState<string>('#00afd6'); // Màu chữ ban đầu
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTextColor((prevColor) => (prevColor === '#00afd6' ? '#fe3500' : '#00afd6'));
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []); // Chạy một lần khi component được render
+
+  return (
+    <div id="profile">
+      <img
+        className="face1"
+        src="./public/z4209884034569_c2688118104a54e5d43d24c181bac0fe.jpg"
+        alt="Ảnh đại diện"
+      />
+      <img
+        className="face"
+        src="./public/z4089865144054_88dd3b493a628017cf2898ea5e1f03ea.jpg"
+        alt=""
+      />
+      <h1 style={{ color: textColor }}>Nguyễn Thành Thắng</h1>
+      <p style={{ color: textColor }}>Tuổi: 22</p>
+      <p style={{ color: textColor }}>Quê quán: Điện Biên</p>
+      <p style={{ color: textColor }}>Định hướng: Cái gì nhiều tiền thì làm</p>
+      <div id="languages">
+        <p style={{ color: textColor }}>Ngôn ngữ đã học:</p>
+        <ul>
+          <li style={{ color: textColor }}>Korean</li>
+          <li style={{ color: textColor }}>JavaScript</li>
+          <li style={{ color: textColor }}>C++</li>
+        </ul>
+      </div>
     </div>
-    )
-}
+  );
+};
+
 export default ProfilePage;
