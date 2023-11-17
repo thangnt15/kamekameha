@@ -19,12 +19,12 @@ const ProfilePage: React.FC = () => {
     <div id="profile">
       <img
         className="face1"
-        src="./public/z4209884034569_c2688118104a54e5d43d24c181bac0fe.jpg"
+        src="./z4209884034569_c2688118104a54e5d43d24c181bac0fe.jpg"
         alt="Ảnh đại diện"
       />
       <img
         className="face"
-        src="./public/z4089865144054_88dd3b493a628017cf2898ea5e1f03ea.jpg"
+        src="./z4089865144054_88dd3b493a628017cf2898ea5e1f03ea.jpg"
         alt=""
       />
       <h1 style={{ color: textColor }}>Nguyễn Thành Thắng</h1>
