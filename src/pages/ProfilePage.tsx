@@ -1,13 +1,15 @@
 // Trong file ProfilePage.tsx
-import React, { useState, useEffect } from 'react';
-import '../App.css';
+import React, { useState, useEffect } from "react";
+import "../App.css";
 
 const ProfilePage: React.FC = () => {
-  const [textColor, setTextColor] = useState<string>('#00afd6'); // Màu chữ ban đầu
+  const [textColor, setTextColor] = useState<string>("#00afd6"); // Màu chữ ban đầu
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setTextColor((prevColor) => (prevColor === '#00afd6' ? '#fe3500' : '#00afd6'));
+      setTextColor((prevColor) =>
+        prevColor === "#00afd6" ? "#fe3500" : "#00afd6"
+      );
     }, 1000);
 
     return () => {
