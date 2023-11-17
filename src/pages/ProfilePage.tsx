@@ -22,7 +22,7 @@ const ProfilePage: React.FC = () => {
       <img
         className="face1"
         src="./z4209884034569_c2688118104a54e5d43d24c181bac0fe.jpg"
-        alt="Ảnh đại diện"
+        alt="Ảnh"
       />
       <img
         className="face"
