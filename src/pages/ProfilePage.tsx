@@ -8,7 +8,7 @@ const ProfilePage: React.FC = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTextColor((prevColor) =>
-        prevColor === "#00afd6" ? "#fe3500" : "#00afd6"
+        prevColor === "#00afd6" ? "#fe3500" : "#00afd6" 
       );
     }, 1000);
 
